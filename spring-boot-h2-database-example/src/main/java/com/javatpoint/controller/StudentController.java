@@ -42,4 +42,9 @@ public class StudentController {
 		studentService.saveOrUpdate(student);
 		return student.getId();
 	}
+	@PostMapping("/student")
+	private int saveStudent(@RequestBody Student student) {
+		studentService.saveOrUpdate(student);
+		return student.getId();
+	}
 }
